@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="pr2">
+    <static>0</static>
+    <link name="base_footprint">
+      <self_collide>0</self_collide>
+      <inertial>
+        <mass>118.001000</mass>
+        <pose>-0.062421 0.000000 0.201365 0.000000 -0.000000 0.000000</pose>
+        <inertia>
+          <ixx>8.431730</ixx>
+          <ixy>-0.009720</ixy>
+          <ixz>1.901570</ixz>
+          <iyy>8.533050</iyy>
+          <iyz>-0.007380</iyz>
+          <izz>3.787470</izz>
+        </inertia>
+      </inertial>
+      <collision name="base_footprint_geom">
+        <pose>0.000000 0.000000 0.071000 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.001000 0.001000 0.001000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base_footprint_geom_visual">
+        <geometry>
+          <box>
+            <size>0.010000 0.010000 0.010000</size>
+          </box>
+        </geometry>
+      </visual>
+      <collision name="base_footprint_geom_base_bellow_link">
+        <pose>-0.290000 0.000000 0.851000 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.370000 0.300000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base_footprint_geom_base_bellow_link_visual">
+        <pose>-0.290000 0.000000 0.851000 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.050000 0.370000 0.300000</size>
+          </box>
+        </geometry>
+      </visual>
+      <collision name="base_footprint_geom_base_link">
+        <pose>0.000000 0.000000 0.051000 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/base_v0/base_L.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="base_footprint_geom_base_link_visual">
+        <pose>0.000000 0.000000 0.051000 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/base_v0/base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <sensor name="base_contact_sensor" type="contact">
+        <update_rate>100.000000</update_rate>
+        <contact>
+          <collision>base_footprint_geom_base_link</collision>
+          <topic>__default_topic__</topic>
+        </contact>
+        <plugin name="gazebo_contact" filename="libContactPlugin.so" />
+      </sensor>
+      <sensor name="base_laser" type="ray">
+        <always_on>1</always_on>
+        <visualize>1</visualize>
+        <update_rate>20.000000</update_rate>
+        <pose>0.275000 0.000000 0.303000 0.000000 -0.000000 0.000000</pose>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>-2.268900</min_angle>
+              <max_angle>2.268900</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.080000</min>
+            <max>10.000000</max>
+            <resolution>0.010000</resolution>
+          </range>
+        </ray>
+        <plugin name="laser" filename="libRayPlugin.so" />
+      </sensor>
+      <velocity_decay />
+    </link>
+    <link name="bl_caster_rotation_link">
+      <self_collide>0</self_collide>
+      <pose>-0.224600 0.224600 0.079200 0.000000 -0.000000 0.000000</pose>
+      <inertial>
+        <mass>3.473080</mass>
+        <pose>0.000000 0.000000 0.070000 0.000000 -0.000000 0.000000</pose>
+        <inertia>
+          <ixx>0.012412</ixx>
+          <ixy>-0.000712</ixy>
+          <ixz>0.000503</ixz>
+          <iyy>0.015218</iyy>
+          <iyz>-0.000004</iyz>
+          <izz>0.011764</izz>
+        </inertia>
+      </inertial>
+      <collision name="bl_caster_rotation_link_geom">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/base_v0/caster_L.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="bl_caster_rotation_link_geom_visual">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/base_v0/caster.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay />
+    </link>
+    <link name="bl_caster_l_wheel_link">
+      <self_collide>0</self_collide>
+      <pose>-0.224600 0.273600 0.079200 0.000000 -0.000000 0.000000</pose>
+      <inertial>
+        <mass>0.440360</mass>
+        <inertia>
+          <ixx>0.012412</ixx>
+          <ixy>-0.000712</ixy>
+          <ixz>0.000503</ixz>
+          <iyy>0.015218</iyy>
+          <iyz>-0.000004</iyz>
+          <izz>0.011764</izz>
+        </inertia>
+      </inertial>
+      <collision name="bl_caster_l_wheel_link_geom">
+        <pose>0.000000 0.000000 0.000000 1.570800 -0.000000 0.000000</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.074792</radius>
+            <length>0.034000</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="bl_caster_l_wheel_link_geom_visual">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/base_v0/wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay />
+    </link>
+    <joint name="bl_caster_rotation_joint" type="revolute">
+      <parent>base_footprint</parent>
+      <child>bl_caster_rotation_link</child>
+      <axis>
+        <xyz>0.000000 0.000000 1.000000</xyz>
+        <limit>
+          <lower>-10000000000000000.000000</lower>
+          <upper>10000000000000000.000000</upper>
+          <effort>0.000000</effort>
+          <velocity>4.000000</velocity>
+        </limit>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>

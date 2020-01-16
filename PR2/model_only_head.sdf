@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="pr2">
+    <static>0</static>
+    <link name="head_pan_link">
+      <self_collide>0</self_collide>
+      <pose>-0.067070 0.000000 1.172130 0.000000 -0.000000 0.000000</pose>
+      <inertial>
+        <mass>6.339000</mass>
+        <pose>0.010907 0.031693 0.090507 0.000000 -0.000000 0.000000</pose>
+        <inertia>
+          <ixx>0.032498</ixx>
+          <ixy>0.000636</ixy>
+          <ixz>0.002585</ixz>
+          <iyy>0.046546</iyy>
+          <iyz>-0.002453</iyz>
+          <izz>0.057653</izz>
+        </inertia>
+      </inertial>
+      <collision name="head_pan_link_geom">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/head_v0/head_pan_L.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="head_pan_link_geom_visual">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/head_v0/head_pan.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay />
+    </link>
+    <link name="head_tilt_link">
+      <projector name="projector_wg6802418_projector_wg6802418">
+        <texture>stereo_projection_pattern_high_res_red.png</texture>
+        <fov>0.959931</fov>
+        <near_clip>0.100000</near_clip>
+        <far_clip>10.000000</far_clip>
+        <pose>0.023200 0.110000 0.119100 0 -1.570793 0</pose>
+      </projector>
+      <self_collide>0</self_collide>
+      <pose>0.000930 0.000000 1.172130 0.000000 -0.000000 0.000000</pose>
+      <inertial>
+        <mass>5.319000</mass>
+        <pose>-0.005151 -0.014635 0.072819 0.000000 -0.000000 0.000000</pose>
+        <inertia>
+          <ixx>0.126134</ixx>
+          <ixy>0.000237</ixy>
+          <ixz>0.011881</ixz>
+          <iyy>0.165102</iyy>
+          <iyz>0.001606</iyz>
+          <izz>0.166947</izz>
+        </inertia>
+      </inertial>
+      <collision name="head_tilt_link_geom">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/head_v0/head_tilt_L.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_visual">
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/head_v0/head_tilt.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="head_tilt_link_geom_head_mount_kinect_ir_link">
+        <pose>-0.147067 0.012500 0.291953 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000500</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_head_mount_kinect_ir_link_visual">
+        <pose>-0.147067 0.012500 0.291953 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000250</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script><name>Gazebo/Red</name></script>
+        </material>
+      </visual>
+      <collision name="head_tilt_link_geom_head_mount_kinect_rgb_link">
+        <pose>-0.147067 0.017500 0.291953 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000500</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_head_mount_kinect_rgb_link_visual">
+        <pose>-0.147067 0.017500 0.291953 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000250</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script><name>Gazebo/Red</name></script>
+        </material>
+      </visual>
+      <collision name="head_tilt_link_geom_head_mount_link">
+        <pose>-0.114800 0.000000 0.155500 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000500</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_head_mount_link_visual">
+        <pose>-0.114800 0.000000 0.155500 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <mesh>
+            <uri>model://pr2/meshes/sensors/kinect_prosilica_v0/115x100_swept_back--coarse.STL</uri>
+            <scale>0.001000 0.001000 0.001000</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="head_tilt_link_geom_head_mount_prosilica_link">
+        <pose>-0.161257 0.012500 0.244421 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000500</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_head_mount_prosilica_link_visual">
+        <pose>-0.161257 0.012500 0.244421 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <sphere>
+            <radius>0.000250</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script><name>Gazebo/Red</name></script>
+        </material>
+      </visual>
+      <collision name="head_tilt_link_geom_head_plate_frame">
+        <pose>0.023200 0.000000 0.064500 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.010000 0.010000 0.010000</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="head_tilt_link_geom_head_plate_frame_visual">
+        <pose>0.023200 0.000000 0.064500 0.000000 -0.000000 0.000000</pose>
+        <geometry>
+          <box>
+            <size>0.010000 0.010000 0.010000</size>
+          </box>
+        </geometry>
+        <material>
+          <script><name>Gazebo/Grey</name></script>
+        </material>
+      </visual>
+      <sensor name="head_mount_sensor" type="camera">
+        <always_on>0</always_on>
+        <visualize>0</visualize>
+        <update_rate>1.000000</update_rate>
+        <pose>-0.147067 0.012500 0.291953 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>0.994838</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <clip>
+            <near>0.010000</near>
+            <far>5.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="head_mount_prosilica_link_sensor" type="camera">
+        <update_rate>1.000000</update_rate>
+        <pose>-0.161257 0.012500 0.244421 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>1.120501</horizontal_fov>
+          <image>
+            <width>320</width>
+            <height>240</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="head_mount_prosilica_link_sim_pcd_sensor" type="camera">
+        <update_rate>1.000000</update_rate>
+        <pose>-0.161257 0.012500 0.244421 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>1.120501</horizontal_fov>
+          <image>
+            <width>320</width>
+            <height>240</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="narrow_stereo_gazebo_l_stereo_camera_sensor" type="camera">
+        <always_on>1</always_on>
+        <visualize>1</visualize>
+        <update_rate>25.000000</update_rate>
+        <pose>0.068200 0.060000 0.114600 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>0.785398</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="narrow_stereo_gazebo_r_stereo_camera_sensor" type="camera">
+        <always_on>1</always_on>
+        <update_rate>25.000000</update_rate>
+        <pose>0.068200 -0.030000 0.114600 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>0.785398</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>L8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="wide_stereo_gazebo_l_stereo_camera_sensor" type="camera">
+        <update_rate>25.000000</update_rate>
+        <pose>0.068200 0.030000 0.114600 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>1.570796</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>BAYER_BGGR8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="wide_stereo_gazebo_r_stereo_camera_sensor" type="camera">
+        <update_rate>25.000000</update_rate>
+        <pose>0.068200 -0.060000 0.114600 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>1.570796</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>BAYER_BGGR8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <sensor name="high_def_sensor" type="camera">
+        <update_rate>20.000000</update_rate>
+        <pose>0.069657 -0.110000 0.119100 0.000000 -0.000000 0.000000</pose>
+        <camera>
+          <horizontal_fov>0.785398</horizontal_fov>
+          <image>
+            <width>2448</width>
+            <height>2050</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.100000</near>
+            <far>100.000000</far>
+          </clip>
+        </camera>
+      </sensor>
+      <velocity_decay />
+    </link>
+    <joint name="head_tilt_joint" type="revolute">
+      <parent>head_pan_link</parent>
+      <child>head_tilt_link</child>
+      <axis>
+        <xyz>0.000000 1.000000 0.000000</xyz>
+        <dynamics>
+          <damping>10.000000</damping>
+          <friction>0.000000</friction>
+        </dynamics>
+        <limit>
+          <lower>-0.471237</lower>
+          <upper>1.396260</upper>
+          <effort>0.000000</effort>
+          <velocity>4.000000</velocity>
+        </limit>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>
