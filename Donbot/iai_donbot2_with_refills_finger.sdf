@@ -213,7 +213,7 @@
       <velocity_decay/>
       <self_collide>1</self_collide>
     </link>
-    <joint name="shoulder_pan_joint" type="revolute">
+    <joint name="ur5_shoulder_pan_joint" type="revolute">
       <child>ur5_shoulder_link</child>
       <parent>odom</parent>
       <axis>
@@ -283,7 +283,7 @@
       <velocity_decay/>
       <self_collide>1</self_collide>
     </link>
-    <joint name="shoulder_lift_joint" type="revolute">
+    <joint name="ur5_shoulder_lift_joint" type="revolute">
       <child>ur5_upper_arm_link</child>
       <parent>ur5_shoulder_link</parent>
       <axis>
@@ -353,7 +353,7 @@
       <velocity_decay/>
       <self_collide>1</self_collide>
     </link>
-    <joint name="elbow_joint" type="revolute">
+    <joint name="ur5_elbow_joint" type="revolute">
       <child>ur5_forearm_link</child>
       <parent>ur5_upper_arm_link</parent>
       <axis>
@@ -423,7 +423,7 @@
       <velocity_decay/>
       <self_collide>1</self_collide>
     </link>
-    <joint name="wrist_1_joint" type="revolute">
+    <joint name="ur5_wrist_1_joint" type="revolute">
       <child>ur5_wrist_1_link</child>
       <parent>ur5_forearm_link</parent>
       <axis>
@@ -493,7 +493,7 @@
       <velocity_decay/>
       <self_collide>1</self_collide>
     </link>
-    <joint name="wrist_2_joint" type="revolute">
+    <joint name="ur5_wrist_2_joint" type="revolute">
       <child>ur5_wrist_2_link</child>
       <parent>ur5_wrist_1_link</parent>
       <axis>
@@ -694,7 +694,7 @@
       <gravity>1</gravity>
       <velocity_decay/>
     </link>
-    <joint name="wrist_3_joint" type="revolute">
+    <joint name="ur5_wrist_3_joint" type="revolute">
       <child>ur5_wrist_3_link</child>
       <parent>ur5_wrist_2_link</parent>
       <axis>
@@ -909,6 +909,5 @@
     
     <plugin name="ros_control" filename="libgazebo_ros_control.so"/>
     <static>0</static>
-    <plugin name="ros_control" filename="libgazebo_ros_control.so"/>
   </model>
 </sdf>
