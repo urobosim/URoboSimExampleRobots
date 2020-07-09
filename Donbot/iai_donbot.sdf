@@ -622,7 +622,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://Donbot/meshes/visual/iai_table_robot_description_adapter_plate_iso50_kms40_weiss.fbx</uri>
+            <uri>model://Donbot/meshes/visual/iai_kms_40_description_adapter_plate_iso50_kms40_weiss.fbx</uri>
           </mesh>
         </geometry>
       </visual>
