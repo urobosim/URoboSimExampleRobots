@@ -1,6 +1,6 @@
 <sdf version="1.6">
   <model name="iai_donbot">
-    <link name="map">
+    <!--link name="map">
       <pose frame="">0 0 0 0 -0 0</pose>
       <inertial>
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -104,7 +104,7 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-    </joint>
+    </joint-->
     <link name="base_footprint">
       <pose frame="">0 0 0 0 -0 0</pose>
       <inertial>
@@ -260,7 +260,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name="odom_z_joint" type="revolute">
+    <!--joint name="odom_z_joint" type="revolute">
       <child>base_footprint</child>
       <parent>odom_y_frame</parent>
       <axis>
@@ -275,7 +275,7 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-    </joint>
+    </joint-->
     <link name="ur5_shoulder_link">
       <pose frame="">-0.26975 -0.199 0.720759 0 -0 0</pose>
       <inertial>
@@ -564,7 +564,7 @@
           </mesh>
         </geometry>
       </collision>
-      <collision name="ur5_wrist_3_link_fixed_joint_lump__ur5_ee_link_collision_1">
+      <!--collision name="ur5_wrist_3_link_fixed_joint_lump__ur5_ee_link_collision_1">
         <pose frame="">-0 0.0723 0 0 -0 1.5708</pose>
         <geometry>
           <box>
@@ -598,7 +598,7 @@
             <radius>0.04</radius>
           </cylinder>
         </geometry>
-      </collision>
+      </collision-->
       <visual name="ur5_wrist_3_link_visual">
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
@@ -608,7 +608,7 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name="ur5_wrist_3_link_fixed_joint_lump__kms_mounting_plate_visual_1">
+      <!--visual name="ur5_wrist_3_link_fixed_joint_lump__kms_mounting_plate_visual_1">
         <pose frame="">0 0.0823 0 3.14159 1.57079 -1.57079</pose>
         <geometry>
           <mesh>
@@ -679,7 +679,7 @@
             <uri>model://Donbot/meshes/visual/refills_camera_holder_and_camera.fbx</uri>
           </mesh>
         </geometry>
-      </visual>
+      </visual-->
     </link>
     <joint name="ur5_wrist_3_joint" type="revolute">
       <child>ur5_wrist_3_link</child>
@@ -701,7 +701,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name="gripper_gripper_left_link">
+    <!--link name="gripper_gripper_left_link">
       <pose frame="">0.5475 0.06955 0.622109 1.57079 -1.57079 3.14159</pose>
       <inertial>
         <pose frame="">0 0 0.0115 0 -0 0</pose>
@@ -842,6 +842,6 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-    </joint>
+    </joint-->
   </model>
 </sdf>
