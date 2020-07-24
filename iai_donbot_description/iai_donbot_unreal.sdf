@@ -93,7 +93,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://iai_donbot_description/meshes/iai_boxy_base_2/boxy_base.fbx</uri> <!--Change name to boxy_base to solve conflict with base from ur5-->
+            <uri>model://iai_donbot_description/meshes/iai_boxy_base_2/boxy_base.fbx</uri>
           </mesh>
         </geometry>
       </visual>
@@ -491,7 +491,7 @@
         <pose frame="">0 0.0823 0 3.14159 1.57079 -1.57079</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_table_robot/adapter_plate_iso50_kms40_weiss.fbx</uri>
           </mesh>
         </geometry>
@@ -500,7 +500,7 @@
         <pose frame="">0 0.0823 0 -3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_kms_40/adapter_plate_iso50_kms40_weiss.fbx</uri>
           </mesh>
         </geometry>
@@ -509,7 +509,7 @@
         <pose frame="">0 0.0983 0 -3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_kms_40/kms40_simple.fbx</uri>
           </mesh>
         </geometry>
@@ -518,7 +518,7 @@
         <pose frame="">0 0.1253 0 -3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_adapters/adapter_kms40_fwk050.fbx</uri>
           </mesh>
         </geometry>
@@ -527,7 +527,7 @@
         <pose frame="">0 0.1353 0 -3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_adapters/fwk_fwa_050_simple.fbx</uri>
           </mesh>
         </geometry>
@@ -536,7 +536,7 @@
         <pose frame="">0 0.1494 0 -3.14159 -1.57079 1.5708</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_adapters/adapter_fwa050_wsg50.fbx</uri>
           </mesh>
         </geometry>
@@ -557,6 +557,15 @@
             <scale>1 1 1</scale>
             <uri>model://iai_donbot_description/meshes/iai_refills_camera/refills_camera_holder_and_camera.fbx</uri>
           </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__camera_link_visual_9">
+        <pose frame="">0.066498 0.220347 -0.002956 1.90031 -1.55629 3.01649</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -598,7 +607,7 @@
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
           </mesh>
         </geometry>
@@ -607,7 +616,7 @@
         <pose frame="">0 0 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/WSG-FMF.fbx</uri>
           </mesh>
         </geometry>
@@ -616,7 +625,7 @@
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
           </mesh>
         </geometry>
@@ -625,7 +634,7 @@
         <pose frame="">0 0 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/WSG-FMF.fbx</uri>
           </mesh>
         </geometry>
@@ -669,7 +678,7 @@
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
           </mesh>
         </geometry>
@@ -678,7 +687,7 @@
         <pose frame="">0 0 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/WSG-FMF.fbx</uri>
           </mesh>
         </geometry>
@@ -687,7 +696,7 @@
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
           </mesh>
         </geometry>
@@ -696,7 +705,7 @@
         <pose frame="">0 0 0.023 0 -0 0</pose>
         <geometry>
           <mesh>
-            <scale>1 1 1</scale>
+            <scale>0.001 0.001 0.001</scale>
             <uri>model://iai_donbot_description/meshes/iai_wsg_50/WSG-FMF.fbx</uri>
           </mesh>
         </geometry>
