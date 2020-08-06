@@ -654,8 +654,8 @@
       <axis>
         <xyz>0 -0 -1</xyz>
         <limit>
-          <lower>-0.059</lower>
-          <upper>-0.008</upper>
+          <lower>0</lower>
+          <upper>0.1</upper>
           <effort>10</effort>
           <velocity>0.42</velocity>
         </limit>
@@ -725,8 +725,8 @@
       <axis>
         <xyz>-0 0 1</xyz>
         <limit>
-          <lower>-0.059</lower>
-          <upper>-0.008</upper>
+          <lower>0</lower>
+          <upper>0.1</upper>
           <effort>10</effort>
           <velocity>0.42</velocity>
         </limit>
