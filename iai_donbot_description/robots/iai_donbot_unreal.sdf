@@ -517,7 +517,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/iai_table_robot/adapter_plate_iso50_kms40_weiss.fbx</uri>
+            <uri>model://meshes/fbx/iai_kms_40/adapter_plate_iso50_kms40_weiss.fbx</uri>
           </mesh>
         </geometry>
       </visual>
