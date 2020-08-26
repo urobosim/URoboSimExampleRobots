@@ -15,11 +15,9 @@
         </inertia>
       </inertial>
       <collision name="base_footprint_collision">
-        <pose frame="">0 0 0.071 0 -0 0</pose>
+        <pose frame="">0 0 0 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.001 0.001 0.001</size>
-          </box>
+          <box size="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <collision name="base_footprint_fixed_joint_lump__base_link_collision_1">
@@ -90,11 +88,6 @@
       </collision>
       <visual name="base_footprint_visual">
         <pose frame="">0 0 0 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.01 0.01 0.01</size>
-          </box>
-        </geometry>
       </visual>
       <visual name="base_footprint_fixed_joint_lump__base_link_visual_1">
         <pose frame="">0.25525 0.225 0.1616 0 -0 0</pose>
@@ -579,6 +572,15 @@
             <scale>1 1 1</scale>
             <uri>model://meshes/fbx/iai_refills_camera/refills_camera_holder_and_camera.fbx</uri>
           </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__camera_link_visual_9">
+        <pose frame="">0.066498 0.002956 0.138047 0.204429 -0.00181 -1.58519</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
         </geometry>
       </visual>
       <gravity>1</gravity>
