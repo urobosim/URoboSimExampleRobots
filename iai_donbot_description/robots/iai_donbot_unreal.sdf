@@ -123,7 +123,25 @@
           </box>
         </geometry>
       </visual>
-      <visual name="base_footprint_fixed_joint_lump__plate_visual_5">
+      <visual name="base_footprint_fixed_joint_lump__laser_reference_back_visual_5">
+        <pose frame="">-0.43832 -0.281 0.3191 0 0 -2.3562</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__laser_reference_front_visual_6">
+        <pose frame="">0.43245 0.285215 0.311529 0 -0 0.785397</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__plate_visual_7">
         <pose frame="">-0.04475 -0.005 0.6216 0 -0 0</pose>
         <geometry>
           <box>
@@ -131,7 +149,7 @@
           </box>
         </geometry>
       </visual>
-      <visual name="base_footprint_fixed_joint_lump__switches_visual_6">
+      <visual name="base_footprint_fixed_joint_lump__switches_visual_8">
         <pose frame="">-0.40475 0 0.3866 0 -0 0</pose>
         <geometry>
           <box>
@@ -139,7 +157,7 @@
           </box>
         </geometry>
       </visual>
-      <visual name="base_footprint_fixed_joint_lump__ur5_touchpad_visual_7">
+      <visual name="base_footprint_fixed_joint_lump__ur5_touchpad_visual_9">
         <pose frame="">0.09525 -0.3105 0.5416 0 -0 0</pose>
         <geometry>
           <box>
@@ -147,7 +165,7 @@
           </box>
         </geometry>
       </visual>
-      <visual name="base_footprint_fixed_joint_lump__wlan_visual_8">
+      <visual name="base_footprint_fixed_joint_lump__wlan_visual_10">
         <pose frame="">0.30525 0 0.5666 0 -0.314 0</pose>
         <geometry>
           <box>
