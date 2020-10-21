@@ -15,7 +15,7 @@
         </inertia>
       </inertial>
       <collision name="base_footprint_collision">
-        <pose frame="">0 0 0.071 0 -0 0</pose>
+        <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <box>
             <size>0.001 0.001 0.001</size>
