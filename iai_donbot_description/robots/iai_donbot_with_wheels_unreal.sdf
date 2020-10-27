@@ -700,7 +700,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name="wheel_left_down">
+    <link name="wheel_back_left">
       <pose frame="">-0.39275 0.315 0.1016 0 -0 0</pose>
       <inertial>
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -714,27 +714,27 @@
           <izz>0.03</izz>
         </inertia>
       </inertial>
-      <collision name="wheel_left_down_collision">
-        <pose frame="">0 0 0 0 -0 0</pose>
+      <collision name="wheel_back_left_collision">
+        <pose frame="">0 0 0 1.5708 -0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_collision.fbx</uri>
-          </mesh>
+          <cylinder>
+            <length>0.08</length>
+            <radius>0.105</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <visual name="wheel_left_down_visual">
+      <visual name="wheel_back_left_visual">
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_left_down.fbx</uri>
+            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_back_left.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name="wheel_left_down_joint" type="revolute">
-      <child>wheel_left_down</child>
+    <joint name="wheel_back_left_joint" type="revolute">
+      <child>wheel_back_left</child>
       <parent>base_footprint</parent>
       <axis>
         <xyz>0 1 0</xyz>
@@ -751,58 +751,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name="wheel_left_up">
-      <pose frame="">0.38525 0.315 0.1016 0 -0 0</pose>
-      <inertial>
-        <pose frame="">0 0 0 0 -0 0</pose>
-        <mass>2</mass>
-        <inertia>
-          <ixx>0.01</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.01</iyy>
-          <iyz>0</iyz>
-          <izz>0.03</izz>
-        </inertia>
-      </inertial>
-      <collision name="wheel_left_up_collision">
-        <pose frame="">0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_collision.fbx</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name="wheel_left_up_visual">
-        <pose frame="">0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_left_up.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-    </link>
-    <joint name="wheel_left_up_joint" type="revolute">
-      <child>wheel_left_up</child>
-      <parent>base_footprint</parent>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1000</lower>
-          <upper>1000</upper>
-          <effort>200</effort>
-          <velocity>1</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name="wheel_right_down">
+    <link name="wheel_back_right">
       <pose frame="">-0.39275 -0.32 0.1016 0 -0 0</pose>
       <inertial>
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -816,27 +765,27 @@
           <izz>0.03</izz>
         </inertia>
       </inertial>
-      <collision name="wheel_right_down_collision">
-        <pose frame="">0 0 0 0 -0 0</pose>
+      <collision name="wheel_back_right_collision">
+        <pose frame="">0 0 0 1.5708 -0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_collision.fbx</uri>
-          </mesh>
+          <cylinder>
+            <length>0.08</length>
+            <radius>0.105</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <visual name="wheel_right_down_visual">
+      <visual name="wheel_back_right_visual">
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_right_down.fbx</uri>
+            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_back_right.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name="wheel_right_down_joint" type="revolute">
-      <child>wheel_right_down</child>
+    <joint name="wheel_back_right_joint" type="revolute">
+      <child>wheel_back_right</child>
       <parent>base_footprint</parent>
       <axis>
         <xyz>0 1 0</xyz>
@@ -853,7 +802,58 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-    <link name="wheel_right_up">
+    <link name="wheel_front_left">
+      <pose frame="">0.38525 0.315 0.1016 0 -0 0</pose>
+      <inertial>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <mass>2</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.03</izz>
+        </inertia>
+      </inertial>
+      <collision name="wheel_front_left_collision">
+        <pose frame="">0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.08</length>
+            <radius>0.105</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="wheel_front_left_visual">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_front_left.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="wheel_front_left_joint" type="revolute">
+      <child>wheel_front_left</child>
+      <parent>base_footprint</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1000</lower>
+          <upper>1000</upper>
+          <effort>200</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="wheel_front_right">
       <pose frame="">0.38525 -0.32 0.1016 0 -0 0</pose>
       <inertial>
         <pose frame="">0 0 0 0 -0 0</pose>
@@ -867,27 +867,27 @@
           <izz>0.03</izz>
         </inertia>
       </inertial>
-      <collision name="wheel_right_up_collision">
-        <pose frame="">0 0 0 0 -0 0</pose>
+      <collision name="wheel_front_right_collision">
+        <pose frame="">0 0 0 1.5708 -0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_collision.fbx</uri>
-          </mesh>
+          <cylinder>
+            <length>0.08</length>
+            <radius>0.105</radius>
+          </cylinder>
         </geometry>
       </collision>
-      <visual name="wheel_right_up_visual">
+      <visual name="wheel_front_right_visual">
         <pose frame="">0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_right_up.fbx</uri>
+            <uri>model://meshes/fbx/iai_boxy_base_2/wheel_front_right.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name="wheel_right_up_joint" type="revolute">
-      <child>wheel_right_up</child>
+    <joint name="wheel_front_right_joint" type="revolute">
+      <child>wheel_front_right</child>
       <parent>base_footprint</parent>
       <axis>
         <xyz>0 1 0</xyz>
