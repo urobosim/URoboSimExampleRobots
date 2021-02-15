@@ -523,13 +523,13 @@
     <link name="iiwa_link_7">
       <pose frame="">1.28415 -0 1.73711 0 0.785398 0</pose>
       <inertial>
-        <pose frame="">0 0 0.066409 0 -0 0</pose>
+        <pose frame="">0 0 0.049591 0 -0 0</pose>
         <mass>0.55</mass>
         <inertia>
-          <ixx>1.00242</ixx>
+          <ixx>1.00158</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.00242</iyy>
+          <iyy>1.00158</iyy>
           <iyz>0</iyz>
           <izz>1.001</izz>
         </inertia>
@@ -555,7 +555,7 @@
         </surface>
       </collision>
       <collision name="iiwa_link_7_fixed_joint_lump__gripper_base_link_collision_1">
-        <pose frame="">0 0 0.1221 0 0 -3.14159</pose>
+        <pose frame="">0 0 0.0851 0 -0 -3.14159</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -572,16 +572,16 @@
         </surface>
       </collision>
       <collision name="iiwa_link_7_fixed_joint_lump__camera_holder_link_collision_2">
-        <pose frame="">0 0 0.1221 0 -0 0</pose>
+        <pose frame="">0 0 0.0851 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://meshes/refills_camera_holder_and_camera.stl</uri>
+            <uri>model://meshes/refills_camera_holder_and_camera.fbx</uri>
           </mesh>
         </geometry>
       </collision>
       <collision name="iiwa_link_7_fixed_joint_lump__wrist_collision_collision_3">
-        <pose frame="">0 0 0.083 0 -0 0</pose>
+        <pose frame="">0 0 0.04 0 -0 0</pose>
         <geometry>
           <cylinder>
             <length>0.08</length>
@@ -604,44 +604,8 @@
           </script>
         </material>
       </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__kms_mounting_plate_visual_1">
-        <pose frame="">0 0 0.045 0 -0 -3.14159</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/adapter_plate/adapter_plate_iso50_kms40_weiss.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__adapter_iso50_kms40_frame_in_visual_2">
-        <pose frame="">0 0 0.045 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/adapter_plate/adapter_plate_iso50_kms40_weiss.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__kms40_frame_in_visual_3">
-        <pose frame="">0 0 0.061 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/kms40/kms40_simple.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__adapter_kms40_fwk050_frame_in_visual_4">
-        <pose frame="">0 0 0.088 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/iai_adapters/adapter_kms40_fwk050.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__fwk_fwa_050_frame_in_visual_5">
-        <pose frame="">0 0 0.098 0 -0 0</pose>
+      <visual name="iiwa_link_7_fixed_joint_lump__fwk_fwa_050_frame_in_visual_1">
+        <pose frame="">0 0 0.071 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -649,17 +613,8 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__adapter_fwa050_wsg50_frame_in_visual_6">
-        <pose frame="">0 0 0.1121 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>model://meshes/fbx/iai_adapters/adapter_fwa050_wsg50.fbx</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__gripper_base_link_visual_7">
-        <pose frame="">0 0 0.1221 0 0 -3.14159</pose>
+      <visual name="iiwa_link_7_fixed_joint_lump__gripper_base_link_visual_2">
+        <pose frame="">0 0 0.0851 0 -0 -3.14159</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -673,13 +628,22 @@
           </script>
         </material>
       </visual>
-      <visual name="iiwa_link_7_fixed_joint_lump__camera_holder_link_visual_8">
-        <pose frame="">0 0 0.1221 0 -0 0</pose>
+      <visual name="iiwa_link_7_fixed_joint_lump__camera_holder_link_visual_3">
+        <pose frame="">0 0 0.0851 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://meshes/refills_camera_holder_and_camera.stl</uri>
+            <uri>model://meshes/refills_camera_holder_and_camera.fbx</uri>
           </mesh>
+        </geometry>
+      </visual>
+      <visual name="iiwa_link_7_fixed_joint_lump__camera_link_visual_4">
+        <pose frame="">-0.001329 0.06619 0.116683 0.231224 -0.003491 0.006955</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
         </geometry>
       </visual>
       <velocity_decay/>
@@ -717,7 +681,7 @@
       </physics>
     </joint>
     <link name="gripper_gripper_left_link">
-      <pose frame="">1.37049 -0 1.82345 -0 -0.785398 -3.14159</pose>
+      <pose frame="">1.34432 -0 1.79729 -0 -0.785398 -3.14159</pose>
       <inertial>
         <pose frame="">0 0 0.0115 0 -0 0</pose>
         <mass>0.2</mass>
@@ -804,7 +768,7 @@
       </axis>
     </joint>
     <link name="gripper_gripper_right_link">
-      <pose frame="">1.37049 -0 1.82345 -3e-06 0.785398 -4e-06</pose>
+      <pose frame="">1.34432 -0 1.79729 -3e-06 0.785398 -4e-06</pose>
       <inertial>
         <pose frame="">0 0 0.0115 0 -0 0</pose>
         <mass>0.2</mass>
