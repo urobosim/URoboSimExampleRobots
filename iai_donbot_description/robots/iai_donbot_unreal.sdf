@@ -1,0 +1,788 @@
+<sdf version="1.6">
+  <model name="iai_donbot">
+    <link name="base_footprint">
+      <pose frame="">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame="">-0.016311 -0.013447 0.237645 0 -0 0</pose>
+        <mass>74.0211</mass>
+        <inertia>
+          <ixx>9.86751</ixx>
+          <ixy>-0.105452</ixy>
+          <ixz>1.08785</ixz>
+          <iyy>13.4673</iyy>
+          <iyz>0.311726</iyz>
+          <izz>7.87279</izz>
+        </inertia>
+      </inertial>
+      <collision name="base_footprint_collision">
+        <pose frame="">0 0 0 0 0 0</pose>
+        <geometry>
+          <box size="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__base_link_collision_1">
+        <pose frame="">0.25525 0.225 0.1616 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_boxy_base_2/base_lowres.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__ur5_base_link_collision_2">
+        <pose frame="">-0.26975 -0.199 0.6316 0 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/base.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__charger_collision_3">
+        <pose frame="">0.33025 0 0.3516 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.15 0.3 0.38</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__e_stop_collision_4">
+        <pose frame="">0.22025 0.2235 0.6816 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.07 0.07 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__plate_collision_5">
+        <pose frame="">-0.04475 -0.005 0.6216 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6 0.553 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__switches_collision_6">
+        <pose frame="">-0.40475 0 0.3866 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.4 0.45</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__ur5_touchpad_collision_7">
+        <pose frame="">0.09525 -0.3105 0.5416 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.32 0.06 0.24</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_footprint_fixed_joint_lump__wlan_collision_8">
+        <pose frame="">0.30525 0 0.5666 0 -0.314 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.14 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base_footprint_visual">
+        <pose frame="">0 0 0 0 -0 0</pose>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__base_link_visual_1">
+        <pose frame="">0.25525 0.225 0.1616 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_boxy_base_2/boxy_base.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__ur5_base_link_visual_2">
+        <pose frame="">-0.26975 -0.199 0.6316 0 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/base.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__charger_visual_3">
+        <pose frame="">0.33025 0 0.3516 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.15 0.3 0.38</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__e_stop_visual_4">
+        <pose frame="">0.22025 0.2235 0.6816 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.07 0.07 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__laser_reference_back_visual_5">
+        <pose frame="">-0.43832 -0.281 0.3191 0 0 -2.3562</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__laser_reference_front_visual_6">
+        <pose frame="">0.43245 0.285215 0.311529 0 -0 0.785397</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__plate_visual_7">
+        <pose frame="">-0.04475 -0.005 0.6216 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6 0.553 0.02</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__switches_visual_8">
+        <pose frame="">-0.40475 0 0.3866 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.4 0.45</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__ur5_touchpad_visual_9">
+        <pose frame="">0.09525 -0.3105 0.5416 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.32 0.06 0.24</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name="base_footprint_fixed_joint_lump__wlan_visual_10">
+        <pose frame="">0.30525 0 0.5666 0 -0.314 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.14 0.05</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="ur5_shoulder_link">
+      <pose frame="">-0.26975 -0.199 0.720759 0 -0 -3.14159</pose>
+      <inertial>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <mass>3.7</mass>
+        <inertia>
+          <ixx>0.0149724</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0149724</iyy>
+          <iyz>0</iyz>
+          <izz>0.0104063</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_shoulder_link_collision">
+        <pose frame="">0 0 0 0 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/shoulder.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ur5_shoulder_link_visual">
+        <pose frame="">0 0 0 0 -0 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/shoulder.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="ur5_shoulder_pan_joint" type="revolute">
+      <child>ur5_shoulder_link</child>
+      <parent>base_footprint</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.28319</lower>
+          <upper>6.28319</upper>
+          <effort>150</effort>
+          <velocity>3.15</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="ur5_upper_arm_link">
+      <pose frame="">-0.26975 -0.199 0.720759 1.5708 -0 -3.14159</pose>
+      <inertial>
+        <pose frame="">-0.2125 0 0.136 3.14159 1.57079 3.14159</pose>
+        <mass>8.393</mass>
+        <inertia>
+          <ixx>0.133886</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.133886</iyy>
+          <iyz>0</iyz>
+          <izz>0.0151074</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_upper_arm_link_collision">
+        <pose frame="">0 0 0.136 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/upperarm.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ur5_upper_arm_link_visual">
+        <pose frame="">0 0 0.136 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/upperarm.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="ur5_shoulder_lift_joint" type="revolute">
+      <child>ur5_upper_arm_link</child>
+      <parent>ur5_shoulder_link</parent>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <limit>
+          <lower>-6.28319</lower>
+          <upper>6.28319</upper>
+          <effort>150</effort>
+          <velocity>3.15</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="ur5_forearm_link">
+      <pose frame="">0.15525 -0.199 0.720759 1.5708 -0 -3.14159</pose>
+      <inertial>
+        <pose frame="">-0.2125 0 0.0165 3.14159 1.57079 3.14159</pose>
+        <mass>2.275</mass>
+        <inertia>
+          <ixx>0.0312168</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0312168</iyy>
+          <iyz>0</iyz>
+          <izz>0.004095</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_forearm_link_collision">
+        <pose frame="">0 0 0.0165 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/forearm.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ur5_forearm_link_visual">
+        <pose frame="">0 0 0.0165 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/forearm.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="ur5_elbow_joint" type="revolute">
+      <child>ur5_forearm_link</child>
+      <parent>ur5_upper_arm_link</parent>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>150</effort>
+          <velocity>3.15</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="ur5_wrist_1_link">
+      <pose frame="">0.5475 -0.08985 0.720759 1.5708 -0 -3.14159</pose>
+      <inertial>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <mass>1.219</mass>
+        <inertia>
+          <ixx>0.00262426</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00262426</iyy>
+          <iyz>0</iyz>
+          <izz>0.00342844</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_wrist_1_link_collision">
+        <pose frame="">0 0 -0.093 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/wrist1.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ur5_wrist_1_link_visual">
+        <pose frame="">0 0 -0.093 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/wrist1.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="ur5_wrist_1_joint" type="revolute">
+      <child>ur5_wrist_1_link</child>
+      <parent>ur5_forearm_link</parent>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <limit>
+          <lower>-6.28319</lower>
+          <upper>6.28319</upper>
+          <effort>28</effort>
+          <velocity>3.2</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="ur5_wrist_2_link">
+      <pose frame="">0.5475 -0.08985 0.626109 -3.14159 -0 -3.14159</pose>
+      <inertial>
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <mass>1.219</mass>
+        <inertia>
+          <ixx>0.00178515</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00178515</iyy>
+          <iyz>0</iyz>
+          <izz>0.0021942</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_wrist_2_link_collision">
+        <pose frame="">0 0 -0.095 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/wrist2.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="ur5_wrist_2_link_visual">
+        <pose frame="">0 0 -0.095 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/wrist2.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="ur5_wrist_2_joint" type="revolute">
+      <child>ur5_wrist_2_link</child>
+      <parent>ur5_wrist_1_link</parent>
+      <axis>
+        <xyz>0 -0 -1</xyz>
+        <limit>
+          <lower>-6.28319</lower>
+          <upper>6.28319</upper>
+          <effort>28</effort>
+          <velocity>3.2</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="ur5_wrist_3_link">
+      <pose frame="">0.5475 -0.00755 0.626109 1.5708 0 -3.14159</pose>
+      <inertial>
+        <pose frame="">0 0 0.037473 0 -0 0</pose>
+        <mass>0.4379</mass>
+        <inertia>
+          <ixx>1.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.001</iyy>
+          <iyz>0</iyz>
+          <izz>1.00013</izz>
+        </inertia>
+      </inertial>
+      <collision name="ur5_wrist_3_link_collision">
+        <pose frame="">0 0 -0.0823 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/collision/wrist3.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="ur5_wrist_3_link_fixed_joint_lump__ur5_ee_link_collision_1">
+        <pose frame="">0 -0 -0.01 -3.14159 -1.57079 -1.57079</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="ur5_wrist_3_link_fixed_joint_lump__gripper_base_link_collision_2">
+        <pose frame="">0 -0 0.0771 -0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name="ur5_wrist_3_link_fixed_joint_lump__camera_holder_link_collision_3">
+        <pose frame="">0 -0 0.0771 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_refills_camera/refills_camera_holder_and_camera.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="ur5_wrist_3_link_fixed_joint_lump__wrist_collision_collision_4">
+        <pose frame="">0 -0 0.038 0 0 -1.5708</pose>
+        <geometry>
+          <cylinder>
+            <length>0.08</length>
+            <radius>0.04</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="ur5_wrist_3_link_visual">
+        <pose frame="">0 0 -0.0818 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/ur5/visual/wrist3.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__kms_mounting_plate_visual_1">
+        <pose frame="">0 0 0 -0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_table_robot/adapter_plate_iso50_kms40_weiss.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__adapter_iso50_kms40_frame_in_visual_2">
+        <pose frame="">0 0 0 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_kms_40/adapter_plate_iso50_kms40_weiss.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__kms40_frame_in_visual_3">
+        <pose frame="">0 -0 0.016 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_kms_40/kms40_simple.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__adapter_kms40_fwk050_frame_in_visual_4">
+        <pose frame="">0 0 0.043 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_adapters/adapter_kms40_fwk050.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__fwk_fwa_050_frame_in_visual_5">
+        <pose frame="">0 -0 0.053 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_adapters/fwk_fwa_050_simple.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__adapter_fwa050_wsg50_frame_in_visual_6">
+        <pose frame="">0 -0 0.0671 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_adapters/adapter_fwa050_wsg50.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__gripper_base_link_visual_7">
+        <pose frame="">0 -0 0.0771 -0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__camera_holder_link_visual_8">
+        <pose frame="">0 -0 0.0771 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://meshes/fbx/iai_refills_camera/refills_camera_holder_and_camera.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="ur5_wrist_3_link_fixed_joint_lump__camera_link_visual_9">
+        <pose frame="">0.066498 0.002956 0.138047 0.204429 -0.00181 -1.58519</pose>
+        <geometry>
+          <cylinder>
+            <length>0.005</length>
+            <radius>0.001</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name="ur5_wrist_3_joint" type="revolute">
+      <child>ur5_wrist_3_link</child>
+      <parent>ur5_wrist_2_link</parent>
+      <axis>
+        <xyz>-0 1 -0</xyz>
+        <limit>
+          <lower>-6.28319</lower>
+          <upper>6.28319</upper>
+          <effort>28</effort>
+          <velocity>3.2</velocity>
+        </limit>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="gripper_gripper_left_link">
+      <pose frame="">0.5475 0.06955 0.626109 1.57079 -1.57079 3.14159</pose>
+      <inertial>
+        <pose frame="">0 0 0.0115 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>2.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.00003</iyy>
+          <iyz>0</iyz>
+          <izz>2</izz>
+        </inertia>
+      </inertial>
+      <collision name="gripper_gripper_left_link_collision">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name="gripper_gripper_left_link_fixed_joint_lump__gripper_finger_left_link_collision_1">
+        <pose frame="">0 0 0.023 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG-FMF.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="gripper_gripper_left_link_visual">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="gripper_gripper_left_link_fixed_joint_lump__gripper_finger_left_link_visual_1">
+        <pose frame="">0 0 0.023 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG-FMF.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name="gripper_base_gripper_left_joint" type="prismatic">
+      <child>gripper_gripper_left_link</child>
+      <parent>ur5_wrist_3_link</parent>
+      <axis>
+        <xyz>-0 0 1</xyz>
+        <limit>
+          <lower>-0.055</lower>
+          <upper>-0.0027</upper>
+          <effort>1</effort>
+          <velocity>0.42</velocity>
+        </limit>
+        <dynamics>
+          <damping>100</damping>
+          <friction>100</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name="gripper_gripper_right_link">
+      <pose frame="">0.5475 0.06955 0.626109 -1.57087 1.57079 -7.7e-05</pose>
+      <inertial>
+        <pose frame="">0 0 0.0115 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>2.00003</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.00003</iyy>
+          <iyz>0</iyz>
+          <izz>2</izz>
+        </inertia>
+      </inertial>
+      <collision name="gripper_gripper_right_link_collision">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="gripper_gripper_right_link_fixed_joint_lump__gripper_finger_right_link_collision_1">
+        <pose frame="">0 0 0.023 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG-FMF.fbx</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="gripper_gripper_right_link_visual">
+        <pose frame="">0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/GUIDE_WSG50_110.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name="gripper_gripper_right_link_fixed_joint_lump__gripper_finger_right_link_visual_1">
+        <pose frame="">0 0 0.023 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://meshes/fbx/iai_wsg_50/WSG-FMF.fbx</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="gripper_joint" type="prismatic">
+      <child>gripper_gripper_right_link</child>
+      <parent>gripper_gripper_left_link</parent>
+      <axis>
+        <xyz>-3e-06 0 1</xyz>
+        <limit>
+          <lower>0.0065</lower>
+          <upper>0.109</upper>
+          <effort>1</effort>
+          <velocity>0.42</velocity>
+        </limit>
+        <dynamics>
+          <damping>100</damping>
+          <friction>100</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <static>0</static>
+    <plugin name="ros_control" filename="libgazebo_ros_control.so"/>
+  </model>
+</sdf>
